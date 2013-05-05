@@ -1,5 +1,5 @@
-These are the programming assignments from Coursera's Machine Learning course taught by Andrew Ng.\
-\
+These are the programming assignments from Coursera's Machine Learning course taught by Andrew Ng.
+
 Include:\
 - Linear Regression (one variable and multiple variables)\
 - Logistic Regression\
@@ -10,4 +10,6 @@ Include:\
 - Dimensionality Reduction\
 - Anomaly Detection\
 - Recommender System\
-\
+
+For more information, please visit:
+https://class.coursera.org/ml/lecture/preview
