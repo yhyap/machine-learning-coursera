@@ -23,6 +23,7 @@ h=sigmoid(z);
 logisf=(-y)'*log(h)-(1-y)'*log(1-h);
 
 J=((1/m).*sum(logisf))+(lambda/(2*m)).*sum(theta.^2);
+J -= lambda/(2*m) * theta(1)^2;
 
 k=length(theta)-1;
 n=length(theta);
