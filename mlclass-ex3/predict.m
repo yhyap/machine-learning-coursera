@@ -26,13 +26,14 @@ X = [ones(m, 1) X];
 
 %%% Map from Layer 1 to Layer 2
 % Coverts to matrix of 5000 examples x 26 thetas
-z1=X*Theta1';
+new_X = [ones(m, 1) X];
+z1=new_X*Theta1';
 % Sigmoid function converts to p between 0 to 1
 h1=sigmoid(z1);
-
+m2 = size(h1,1);
 %%% Map from Layer to Layer 3
 % Add ones to the h1 data matrix
-h1=[ones(m, 1) h1];
+h1=[ones(m2, 1) h1];
 % Converts to matrix of 5000 exampls x num_labels 
 z2=h1*Theta2';
 % Sigmoid function converts to p between 0 to 1
